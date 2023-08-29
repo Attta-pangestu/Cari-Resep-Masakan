@@ -1,0 +1,19 @@
+{
+  "name": "cari-resep-masakan",
+  "version": "1.0.0",
+  "description": "Final submission for Dicoding Frontend Fundamental Courses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Attta-pangestu/food-recipe-web-app.git"
+  },
+  "author": "Atha Rizki P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Attta-pangestu/food-recipe-web-app/issues"
+  },
+  "homepage": "https://github.com/Attta-pangestu/food-recipe-web-app#readme"
+}

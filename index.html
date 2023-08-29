@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe App</title>
+    <!-- Link file css -->
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <!-- Link CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <!-- <app-header></app-header> -->
+    <div class="nav-bar">
+        <div class="logo"><img src="https://thumbs.dreamstime.com/b/recipe-word-text-green-leaf-logo-icon-design-black-background-suitable-card-typography-147082451.jpg" ></div>
+        <div class="search-bar"><i class="uil uil-search"></i><input type="search" id="val-keyword-nav" placeholder="Cari inspirasi Resep Anda Disini"> <button id="search-btn-nav">Cari Resep</button> </div>
+        <div class="avatar"><i class="uil uil-user"></i></div>
+    </div>
+    <main>
+       <!-- <hero-search></hero-search> -->
+       <div class="hero-search">
+            <div class="hero-slogan">
+                <h1>
+                    YOUR FAVORITE DISHES — WITHIN REACH.
+                </h1>
+            <hr>
+            <p>Hello, we’re Grandma's Recipe, your new on demand delicious food recipe guide. We know you’re craving for delicious foods right now. So just search what you want to eat, and we will guide you to make it!</p>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Cari resep favorit Kamu disini" id="search-val-hero">
+                <button id="search-btn-hero">Cari Resep</button>
+            </div>
+       </div>
+    </main>
+    <!-- <list-recipe></list-recipe> -->
+    <div class="list-recipe">
+        <div class="recipe-item">
+            <div class="recipe-info">
+                <img src="https://www.themealdb.com/images/media/meals/bc8v651619789840.jpg" alt="">
+                <h2>Rendang</h2>
+                <h3>This is Malaysian Dish</h3>
+                <small>Dish Category : Beef</small>
+                <strong>How To Make</strong>
+                <p> 
+                    Chop the spice paste ingredients and then blend it in a food processor until fine.
+                    Heat the oil in a stew pot, add the spice paste, cinnamon, cloves, star anise, and cardamom and stir-fry until aromatic. Add the beef and the pounded lemongrass and stir for 1 minute. Add the coconut milk, tamarind juice, water, and simmer on medium heat, stirring frequently until the meat is almost cooked. Add the kaffir lime leaves, kerisik (toasted coconut), sugar or palm sugar, stirring to blend well with the meat.
+                    Lower the heat to low, cover the lid, and simmer for 1 to 1 1/2 hours or until the meat is really tender and the gravy has dried up. Add more salt and sugar to taste. Serve immediately with steamed rice and save some for overnight.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</body>
+</html>
