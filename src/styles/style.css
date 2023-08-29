@@ -190,3 +190,10 @@ img {
     object-fit: cover;
     object-position: center;
 }
+
+.recipe-info > h2 , .recipe-info > h3 {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #5a5a5a;
+}
