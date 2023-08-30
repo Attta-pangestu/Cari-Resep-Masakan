@@ -1,22 +1,29 @@
 import DataSource from '../data/dataSource.js' ; 
 
+
 function main () {
-    // definisi elemen DOM 
-    const searchElement = document.getElementById('search-val-hero') ; 
-    const searchBtn = document.getElementById('search-btn-hero') ; 
+    // Instancesiation 
+    const heroSearch = document.querySelector('hero-search') ;  
+    
 
     // Event ketika tombol cari resep diklik 
-    searchBtn.addEventListener('click', () => {
-        const keyword = searchElement.value ; 
-        // Memanggil fungsi getData, mengembalikan nilai array
-        const dataRecipe =  dataSource.getData(keyword) ; 
-        // Memanggil fungsi render
-        console.log(dataRecipe);
-        // if (dataRecipe) {
-            
-        // }
-    });
+   const heroBtnClick = async  () => {
+        try {
+            const keyword = heroSearch.value ;
+            // console.log(keyword) ;  
+            // Memanggil fungsi getData, mengembalikan nilai array
+            const dataRecipe = await DataSource.getData(keyword) ; 
+            // Memanggil fungsi render
+            if (dataRecipe) {
+               console.log(dataRecipe) ; 
+            }
+        }
+        catch(error) {
+        }
+    };
 
+    heroSearch.btnClick = heroBtnClick ; 
 }
+
 
 export default main  ; 
