@@ -5,12 +5,31 @@ class AppHeader extends HTMLElement {
         this.shadowDOM = this.attachShadow({mode:'open'}) ; 
     }
 
+    set btnClick (event) {
+        this._event = event ; 
+        this.search() ;
+    }
+
+    get value () {
+        return this.shadowDOM.querySelector('#val-keyword-nav').value ; 
+    }
+
+    search () {
+        return this.shadowDOM.querySelector('#search-btn-nav').addEventListener('click', this._event) ; 
+    }
+
     connectedCallback() {
         this.render() ;
     }
 
     render() {
+        // Import CDN iconscout 
         this.shadowDOM.innerHTML = `
+        <!-- Link CDN -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        `;
+
+        this.shadowDOM.innerHTML += `
         <div class="nav-bar">
         <div class="logo"><img src="https://thumbs.dreamstime.com/b/recipe-word-text-green-leaf-logo-icon-design-black-background-suitable-card-typography-147082451.jpg" ></div>
         <div class="search-bar"><i class="uil uil-search"></i><input type="search" id="val-keyword-nav" placeholder="Cari inspirasi Resep Anda Disini"> <button id="search-btn-nav">Cari Resep</button> </div>
@@ -24,6 +43,8 @@ class AppHeader extends HTMLElement {
             /*********************
              Style Component App-Header
             *********************/
+
+            
             
             .nav-bar {
                 position: sticky;

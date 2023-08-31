@@ -16,6 +16,16 @@ body{
     font-family: 'lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**********************
+Komponen App Header 
+***********************/
+app-header {
+    width : 100% ; 
 }
 
 
@@ -36,37 +46,25 @@ main {
 /*************************
 Style Komponen List Recipe
 *************************/
-
-.list-recipe {
+recipe-list {
+    display: inline-block ; 
     width: 60%;
-    margin: auto;
+    margin: 2rem auto ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 2rem;
     
 }
 
-.recipe-item {
-    display: block;
-    padding: 1.6rem;
-    margin-bottom: 1.6rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    border-radius: 1rem;
-}
 
-.recipe-info {
-    padding: 1rem;
-}
-
-img {
+/**********************
+Komponen Footer 
+***********************/
+app-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    object-position: center;
+    padding: 2rem;
+    color: white;
+    background-color: black;
 }
 
-.recipe-info > h2 , .recipe-info > h3 {
-    text-transform: uppercase;
-    margin-top: 1rem;
-    text-align: center;
-    border-bottom: 2px solid #5a5a5a;
-}

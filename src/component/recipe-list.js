@@ -1,4 +1,4 @@
-import RecipeItem from "./recipe-item";
+import RecipeItem from "./recipe-item.js";
 
 class RecipeList extends HTMLElement {
     constructor() {
@@ -10,22 +10,22 @@ class RecipeList extends HTMLElement {
         this._recipes = recipes ;
         this.render() ; 
     }
+    
 
     render() {
-        // clearing inner HTML
-        this.shadowDOM.innerHTML = `
-            <div class="list-recipe">
-            
-            </div>
         
-        ` ;
-        // 
+        // clearing inner HTML
+        this.shadowDOM.innerHTML = ``;
+
         // Perulangan data recipes 
-        this._recipes.foreach(recipe => {
+        this._recipes.forEach(recipe => {
             const recipeItem = document.createElement('recipe-item') ; 
             recipeItem.setRecipe = recipe ; 
-            this.append(recipeItem) ;
+            console.log(recipe) ;
+            this.shadowDOM.appendChild(recipeItem) ;
         });
+
+        
     }
     
 }
