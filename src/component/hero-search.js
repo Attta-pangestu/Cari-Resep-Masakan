@@ -28,10 +28,10 @@ class HeroSearch extends HTMLElement {
         <div class="hero-search">
         <div class="hero-slogan">
             <h1>
-                YOUR FAVORITE DISHES — WITHIN REACH.
+            Cari Resep, Temukan Kelezatan!
             </h1>
         <hr>
-        <p>Hello, we’re Grandma's Recipe, your new on demand delicious food recipe guide. We know you’re craving for delicious foods right now. So just search what you want to eat, and we will guide you to make it!</p>
+        <p>Web app yang memudahkan Anda menemukan beragam resep masakan terbaik. Dari masakan rumahan sederhana hingga hidangan istimewa, semua ada di sini. Cari, temukan, dan sajikan kelezatan di meja makan Anda!</p>
         </div>
         <div class="search-container">
             <input type="search" placeholder="Cari resep favorit Kamu disini" id="search-val-hero">
