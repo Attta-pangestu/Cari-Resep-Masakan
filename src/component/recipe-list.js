@@ -17,6 +17,13 @@ class RecipeList extends HTMLElement {
         // clearing inner HTML
         this.shadowDOM.innerHTML = ``;
 
+        this.shadowDOM.innerHTML += `
+            <style>
+
+            </style>
+        
+        ` ; 
+
         // Perulangan data recipes 
         this._recipes.forEach(recipe => {
             const recipeItem = document.createElement('recipe-item') ; 

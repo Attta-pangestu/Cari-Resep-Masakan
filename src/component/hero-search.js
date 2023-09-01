@@ -102,7 +102,7 @@ class HeroSearch extends HTMLElement {
                 margin-left: 6px;
             }
 
-            @media screen and (min-width: 400px) {
+            @media screen and (max-width: 600px) {
                 .search-container {
                     padding: 1rem;
                 }

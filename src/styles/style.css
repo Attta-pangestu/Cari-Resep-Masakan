@@ -57,6 +57,12 @@ recipe-list {
     
 }
 
+@media screen and (max-width: 600px) {
+    recipe-list {
+       width: 80% ; 
+   }
+}
+
 
 /**********************
 Komponen Footer 
@@ -98,6 +104,6 @@ Responsivitas
     }
     .search-container > button {
         width: 40%;
-        
+
     }
 }
