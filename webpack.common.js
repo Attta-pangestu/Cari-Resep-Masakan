@@ -13,7 +13,7 @@ module.exports = {
         new htmlWebpackPlugin({
             template : './src/template.html', 
             filename : 'index.html'
-        }),
+        }), 
     ],
     module : {
         rules : [
