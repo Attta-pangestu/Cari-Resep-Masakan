@@ -30,6 +30,8 @@ app-header {
 
 
 
+
+
 /**********************
 Komponen Hero-Search 
 ***********************/
@@ -42,6 +44,7 @@ main {
     background-size: cover;
     color: white;
 }
+
 
 /*************************
 Style Komponen List Recipe
@@ -68,3 +71,33 @@ app-footer {
     background-color: black;
 }
 
+
+/**********************
+Responsivitas
+***********************/
+
+
+@media screen and (min-width: 600px) {
+    .search-container {
+        padding: 1rem;
+    }
+
+    .search-container > input {
+        width: 55%;
+        
+    }
+    .search-container > button {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width : 400px) {
+    .search-container > input {
+        width: 55%;
+        
+    }
+    .search-container > button {
+        width: 40%;
+        
+    }
+}

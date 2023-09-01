@@ -101,6 +101,21 @@ class HeroSearch extends HTMLElement {
                 border-radius: 0.4rem;
                 margin-left: 6px;
             }
+
+            @media screen and (min-width: 400px) {
+                .search-container {
+                    padding: 1rem;
+                }
+            
+                .search-container > input {
+                    width: 55%;
+                    
+                }
+                .search-container > button {
+                    width: 40%;
+                }
+            }
+
             </style>
         ` ; 
     }

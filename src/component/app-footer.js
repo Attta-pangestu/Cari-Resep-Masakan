@@ -11,6 +11,9 @@ class AppFooter extends HTMLElement {
     render() {
         this.shadowDOM.innerHTML = `
             <style>
+                h1{
+                    text-align : center ;
+                }
                 a{
                     color: white ; 
                     text-align : center ; 
